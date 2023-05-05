@@ -39,9 +39,9 @@ public class WebSeriesService {
         productionHouse.getWebSeriesList().add(webSeries);
         double avg = ratingTotal/productionHouse.getWebSeriesList().size();
         productionHouse.setRatings(avg);
-        productionHouseRepository.save(productionHouse);
+        return productionHouseRepository.save(productionHouse).getId();
 
-        return webSeries.getId();
+//        return webSeries.getId();
     }
 
 }
