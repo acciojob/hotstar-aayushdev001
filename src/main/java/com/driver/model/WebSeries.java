@@ -31,6 +31,15 @@ public class WebSeries {
     @JoinColumn
     private ProductionHouse productionHouse;
 
+
+
+
+
+
+
+
+
+
     public WebSeries(String seriesName, int ageLimit, double rating, SubscriptionType subscriptionType) {
         this.seriesName = seriesName;
         this.ageLimit = ageLimit;

@@ -30,6 +30,12 @@ public class Subscription {
     @JoinColumn
     private User user;
 
+
+
+
+
+
+
     public Subscription(SubscriptionType subscriptionType, int noOfScreensSubscribed, Date startSubscriptionDate, int totalAmountPaid) {
         this.subscriptionType = subscriptionType;
         this.noOfScreensSubscribed = noOfScreensSubscribed;
